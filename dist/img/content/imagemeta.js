@@ -903,5 +903,11 @@
       url: "https://www.newgrounds.com/art/view/oblivionscribe/alpha-orc-smash",
       license: "CC-BY-NC-ND 3.0",
     },
+    "graduate_activity.jpg": {
+      title: "Vita Clotilde",
+      artist: "Rabbi86",
+      url: "https://x.com/Rabbi_86/status/1823695937350610973",
+      license: "CC-BY-NC-ND 3.0",
+    },
   }
 }());

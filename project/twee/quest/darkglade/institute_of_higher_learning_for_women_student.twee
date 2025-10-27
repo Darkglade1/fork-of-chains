@@ -1,0 +1,229 @@
+:: QuestSetup_institute_of_higher_learning_for_women_student [nobr quest]
+
+
+<<run new setup.Title(
+"quest_woman_of_higher_learning_0", /* key */
+"Woman of Higher Learning", /* name */
+"Graduate of the Institute of Higher Learning for Women", /* description */
+"a|is a graduate of the Institute of Higher Learning for Women", /* unit text */
+3000, /* slave value */
+{ /* skill additives */
+ aid: 2, sex: 2,},
+{
+ is_negative: false,
+},
+)
+>>
+
+
+<<set _criteriastudent = new setup.UnitCriteria(
+null, /* key */
+'Female Student', /* name */
+[
+  setup.trait.bg_slave,
+  setup.trait.tough_tough,
+  setup.trait.per_slow,
+  setup.trait.per_calm,
+  setup.trait.per_humble,
+  setup.trait.per_loyal,
+  setup.trait.per_lustful,
+  setup.trait.per_sexaddict,
+  setup.trait.per_submissive,
+  setup.trait.per_masochistic,
+],
+[
+  setup.trait.per_smart,
+  setup.trait.per_brave,
+  setup.trait.per_aggressive,
+  setup.trait.per_proud,
+  setup.trait.per_stubborn,
+  setup.trait.per_chaste,
+  setup.trait.per_dominant,
+  setup.trait.per_lunatic,
+],
+[
+  setup.qres.Job(setup.job.slaver),
+  setup.qres.AllTraits([setup.trait.gender_female], true),
+],
+{
+  brawn: 1,
+  aid: 1,
+  sex: 1,
+}
+)>>
+<<run new setup.QuestTemplate(
+'institute_of_higher_learning_for_women_student', /* key */
+"Institute of Higher Learning for Women - Student", /* Title */
+{ /* Author */
+  name: "Darkglade",
+  url: "",
+},
+[ /* tags */
+  'city',
+  'rare',
+  'veteran',
+  'danger',
+  'trait',
+],
+8, /* weeks */
+setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
+{ /* roles */
+  'student': [ _criteriastudent, 3],
+},
+{ /* actors */
+},
+[ /* costs */
+  setup.qc.Money(-20000),
+],
+'Quest_institute_of_higher_learning_for_women_student',
+setup.qdiff.harder43, /* difficulty */
+[ /* outcomes */
+  [
+    'Quest_institute_of_higher_learning_for_women_studentCrit',
+    [
+      setup.qc.Trait('student', setup.trait.per_submissive),
+      setup.qc.TraitRemove('student', setup.trait.per_dominant),
+      setup.qc.AddTitle('student', 'quest_woman_of_higher_learning_0'),
+    ],
+  ],
+  [
+    'Quest_institute_of_higher_learning_for_women_studentCrit',
+    [
+      setup.qc.Outcomes("crit"),
+      setup.qc.TraumatizeRandom('student', 5),
+    ],
+  ],
+  [
+    'Quest_institute_of_higher_learning_for_women_studentCrit',
+    [
+      setup.qc.TraitRemove('student', setup.trait.per_dominant),
+      setup.qc.Trait('student', setup.trait.per_submissive),
+      setup.qc.MissingUnitRecapture('student', 'capturedmedium'),
+    ],
+  ],
+  [
+    'Quest_institute_of_higher_learning_for_women_studentCrit',
+    [
+      setup.qc.TraumatizeRandom('student', 5),
+      setup.qc.Outcomes("failure"),
+    ],
+  ],
+],
+[ /* quest pool and rarity */
+[setup.questpool.city, setup.rarity.epic],
+],
+[ /* restrictions */
+  setup.qres.HasSlaverWithTraits([setup.trait.gender_female]),
+],
+[ /* expiration outcomes */
+
+],
+)>>
+
+:: Quest_institute_of_higher_learning_for_women_student [nobr]
+<p>
+    The Institute of Higher Learning is an infamous school in the City of Lucgate known for taking in noble problem children and molding them into perfectly docile members of high society. You've heard rumors that the process by which they actually accomplish this is rather scandalous, treating the students as nothing more than slaves in a prison to be broken down, but so far no one has been able to confirm these rumors.
+</p>
+
+<p>
+    The female division of the academy (The Institute of Higher Learning for Woman) has recently announced that it will be temporarily lowering admission costs so that even non-noble families with a much lower income could afford to send their daughters to the academy and train them to be good, obedient wives for their future spouses. You hear from your informant that being a graduate from the Institute of Higher Learning is considered to be a favorable advantage in marriage proposal negotiations.
+</p>
+
+<p>
+    The reduced admission price is still somewhat high, but the price could still be worth paying if you wish to have one of your female slavers become more obedient and <<rep setup.trait.per_submissive>>. Having a graduate of the academy in your slaving company may also open up more opportunities in the future . . .
+</p>
+
+
+:: Quest_institute_of_higher_learning_for_women_studentCrit [nobr]
+<p>
+    Upon arriving at the academy, <<rep $g.student>> was met by guards who demanded that <<they $g.student>> hand over <<them $g.student>> gear and weapons for safekeeping since <<they $g.student>> "would have no need for them." Reluctantly, <<rep $g.student>> complied and handed <<them $g.student>> items over before being led to a waiting room with nothing but the clothes on <<them $g.student>> back.
+</p>
+<p>
+    After half an hour, during which the other female students in the waiting room were one-by-one led out of the room, it was <<reps $g.student>> turn. <<They $g.student>> followed a guard into an ornately decorated office, where one of the academy's head instructors was waiting for <<them $g.student>>.
+</p>
+<p>
+    "Strip."
+</p>
+<p>
+    <<Rep $g.student>> stared in bafflement at the first words out of the instructor's mouth. Seeing <<them $g.student>> confused expression, the instructor repeated himself.
+</p>
+<p>
+    <<font 'subrace_humankingdom'>>
+        "Strip."
+    <</font>>
+</p>
+<p>
+    This time, the words were imbued with a hypnotic element. <<Rep $g.student>> found <<them $g.student>> body moving on its own, sliding <<their $g.student>> clothes off like it was perfectly natural to be doing so.
+</p>
+<p>
+    Now fully nude in front of the male instructor and guards, <<rep $g.student>> blinked in a daze before realization suddenly dawned on <<their $g.student>> face and <<they $g.student>> covered <<themselves $g.student>> with <<them $g.student>> arms with a yelp.
+</p>
+<p>
+    The instructor threw a sleek metal collar to the ground in front of <<them $g.student>>. "Put it on."
+</p>
+<p>
+    Trembling in fear and shame, <<rep $g.student>> made no move to do so. Suddenly, a harsh CRACK filled the room and <<rep $g.student>> felt an agonizing flare of pain on <<their $g.student>> back, letting out a startled cry. Seeing the guard pull the whip back for another strike, <<rep $g.student>> hastily knelt and picked up the collar. With trembling hands, <<rep $g.student>> collared <<themselves $g.student>>, the cold iron leaving a burning sensation against <<their $g.student>> neck.
+</p>
+<p>
+    The guards moved in, one guard roughly grabbing <<reps $g.student>> arms and pulling them behind <<their $g.student>>, shackling <<them $g.student>> wrists together. The other guard knelt and placed fetters on <<them $g.student>> ankles. Finally, the instructor moved forward, producing a ball gag that he roughly shoved into <<reps $g.student>> mouth before securing the strap behind <<them $g.student>> head.
+</p>
+<p>
+    "This is a shock collar," the instructor said, tapping the metal collar. "Every time you disobey an order, or if you obey too slowly, you will be shocked." The instructor flicked a finger and with a gust of wind magic, an agonizing electric pain coursed through <<reps $g.student>> body, producing muffled cries of distress. "If the guard is feeling particularly cruel, you might be whipped as well. If you wish to avoid this pain, I would advise submitting early and letting yourself be molded into an obedient little slut."
+</p>
+<p>
+    Latching a chain leash onto <<reps $g.student>> collar, the guard pulled <<rep $g.student>> out of the room, <<reps $g.student>> feet stumbling awkwardly due to the fetters. <<They $g.student>> was led down several stairways - with every step, the walls become a little less ornate, a little more gritty and dark. Finally, they reached the bottom level which revealed the academy's true perverse secret - a dungeon.
+</p>
+<p>
+    As <<rep $g.student>> was helplessly dragged along, <<they $g.student>> saw the cells on both sides were filled with naked girls just like <<them $g.student>> - collared, gagged, and shackled. Further ahead, <<they $g.student>> heard the sounds of muffled cries and flesh slapping against flesh - the sound of girls being cruelly raped by the sadistic guards.
+</p>
+<p>
+    "You're in this one."
+</p>
+<p>
+    As <<rep $g.student>> was shoved into an open cell, the door closing with a resounding THUD, the realization slowly sunk in that <<they $g.student>> was now nothing more than another one of these helpless girls, to be toyed with by the guards as their plaything.
+</p>
+<p>
+    <<Rep $g.student>> didn't sleep well that night.
+</p>
+<p>
+    The next morning, <<rep $g.student>> was dragged from <<them $g.student>> cell by a guard, who took <<their $g.student>> gag out and immediately plunged his big, hairy dick into <<reps $g.student>> mouth. Ignoring <<them $g.student>> gagging and spluttering, the guard began to roughly facefuck <<them $g.student>>.
+</p>
+<p>
+    "Cum is the only thing you get to eat besides the slave gruel," the guard said. "You better treasure this taste."
+</p>
+<p>
+    <<Rep $g.student>> was subjected to this abuse day-after-day. Every morning started with a breakfast of cum and gruel, followed by intense training that involved rape and various commands that forced <<their $g.student>> to degrade and humiliate <<themselves $g.student>> throughout the afternoon, followed by a dinner of more cum and gruel. Slowly, <<rep $g.student>> found <<themselves $g.student>> obeying the degrading orders more and more quickly and eagerly, all to avoid the ever present pain from the whips and shocks.
+</p>
+<p>
+    <<Rep $g.student>> had long since lost any sense of time, everything blurring together into one giant haze of dick and cum, of pain and pleasure, of cries and guttural moans. However, one morning, when the guard dragged <<them $g.student>> out of the cell, he did not immediately start facefucking <<their $g.student>>.
+</p>
+<p>
+    "Your time's up," he said. "Let's see if you pass."
+</p>
+<p>
+    As the guard pulled her by the leash up familiar flights of stairs, <<rep $g.student>> slowly regained <<them $g.student>> sense of self. That <<they $g.student>> was not just a slave, not just a toy with holes to be used. Finally, the guard led <<them $g.student>> into an office where an instructor was waiting.
+</p>
+<p>
+    <<Reps $g.student>> restraints were removed. The instructor barked orders at <<rep $g.student>>.
+    <<if $gOutcome == 'crit' || $gOutcome == 'success'>>
+        <<They $g.student>> found <<themselves $g.student>> carrying out each order quickly and without any hesitation, no matter how humiliating they got. After going through many degrading poses, the instructor finished by ordering <<them $g.student>> to get on <<them $g.student>> knees and spreading <<them $g.student>> pussy for him. <<Rep $g.student>> did just that, and the instructor wrapped things up by fucking her submissively presented pussy one last time. After cumming inside <<them $g.student>>, the instructor got up and spoke in a hypnotic voice, "You will forget all that you have experienced here. You will only remember that you became a good, obedient girl after graduating from here." As the instructor's voice sank into <<reps $g.student>> mind, <<they $g.student>> found <<their $g.student>> memories of this place slowly sinking into the depths of <<their $g.student>> mind.
+    <<else>>
+        However, <<rep $g.student>> found <<themselves $g.student>> hesitating, and with each errant pause the instructor's frown grew and grew. Eventually, the instructor shook his head with a sigh. "This one fails. Take her back down for even more intensive training." <<Rep $g.student>> felt her heart stop. Back down? For even more training? More intensive than before? Before <<they $g.student>> could properly comprehend this outcome, the guards had already grabbed <<them $g.student>> and forced the shackles back onto <<them $g.student>> body. Crying and sobbing, <<rep $g.student>> tried to beg them to let <<them $g.student>> go but <<their $g.student>> gag turned <<their $g.student>> pleas into nothing but muffled cries. As the guards dragged <<them $g.student>> back down into the deep, dark dungeon, <<rep $g.student>> didn't know if <<they $g.student>> would ever see the light of freedom ever again.
+    <</if>>
+
+</p>
+
+<p>
+    <<if $gOutcome == 'crit'>>
+        Upon returning, you found <<rep $g.student>> to be much more obedient and compliant than before.
+    <<elseif $gOutcome == 'success'>>
+        Upon returning, you found <<rep $g.student>> to be much more obedient and compliant than before.
+        However, you noticed <<reps $g.student>> hands occasionally shake and tremble, the result of some kind of trauma.
+    <<else>>
+        The day that <<rep $g.student>> is supposed to return passes and goes. You frown and contact your informant in the city, who tells you that <<rep $g.student>> had failed the course and was being kept for extra training. The informant also tells you that most students kept for extra training end up as mindbroken sex slaves on the underground market, and that you should probably rescue your slaver quickly if you want <<them $g.student>> back with <<them $g.student>> mind intact.
+    <</if>>
+
+</p>
+
+
+
