@@ -90,7 +90,7 @@ setup.qdiff.harder43, /* difficulty */
     'Quest_institute_of_higher_learning_for_women_studentCrit',
     [
       setup.qc.Outcomes("crit"),
-      setup.qc.TraumatizeRandom('student', 5),
+      setup.qc.TraumatizeRandom('student', 8),
     ],
   ],
   [
@@ -104,7 +104,7 @@ setup.qdiff.harder43, /* difficulty */
   [
     'Quest_institute_of_higher_learning_for_women_studentCrit',
     [
-      setup.qc.TraumatizeRandom('student', 5),
+      setup.qc.TraumatizeRandom('student', 8),
       setup.qc.Outcomes("failure"),
     ],
   ],
@@ -113,6 +113,8 @@ setup.qdiff.harder43, /* difficulty */
 [setup.questpool.city, setup.rarity.epic],
 ],
 [ /* restrictions */
+  setup.qres.Cooldown(16),
+  setup.qres.QuestUnique(),
   setup.qres.HasSlaverWithTraits([setup.trait.gender_female]),
 ],
 [ /* expiration outcomes */
@@ -136,7 +138,7 @@ setup.qdiff.harder43, /* difficulty */
 
 :: Quest_institute_of_higher_learning_for_women_studentCrit [nobr]
 <p>
-    Upon arriving at the academy, <<rep $g.student>> was met by guards who demanded that <<they $g.student>> hand over <<them $g.student>> gear and weapons for safekeeping since <<they $g.student>> "would have no need for them." Reluctantly, <<rep $g.student>> complied and handed <<them $g.student>> items over before being led to a waiting room with nothing but the clothes on <<them $g.student>> back.
+    Upon arriving at the academy, <<rep $g.student>> was met by guards who demanded that <<they $g.student>> hand over <<their $g.student>> gear and weapons for safekeeping since <<they $g.student>> "would have no need for them." Reluctantly, <<rep $g.student>> complied and handed <<their $g.student>> items over before being led to a waiting room with nothing but the clothes on <<their $g.student>> back.
 </p>
 <p>
     After half an hour, during which the other female students in the waiting room were one-by-one led out of the room, it was <<reps $g.student>> turn. <<They $g.student>> followed a guard into an ornately decorated office, where one of the academy's head instructors was waiting for <<them $g.student>>.
@@ -145,7 +147,7 @@ setup.qdiff.harder43, /* difficulty */
     "Strip."
 </p>
 <p>
-    <<Rep $g.student>> stared in bafflement at the first words out of the instructor's mouth. Seeing <<them $g.student>> confused expression, the instructor repeated himself.
+    <<Rep $g.student>> stared in bafflement at the first words out of the instructor's mouth. Seeing <<their $g.student>> confused expression, the instructor repeated himself.
 </p>
 <p>
     <<font 'subrace_humankingdom'>>
@@ -153,10 +155,10 @@ setup.qdiff.harder43, /* difficulty */
     <</font>>
 </p>
 <p>
-    This time, the words were imbued with a hypnotic element. <<Rep $g.student>> found <<them $g.student>> body moving on its own, sliding <<their $g.student>> clothes off like it was perfectly natural to be doing so.
+    This time, the words were imbued with a hypnotic element. <<Rep $g.student>> found <<their $g.student>> body moving on its own, sliding <<their $g.student>> clothes off like it was perfectly natural to be doing so.
 </p>
 <p>
-    Now fully nude in front of the male instructor and guards, <<rep $g.student>> blinked in a daze before realization suddenly dawned on <<their $g.student>> face and <<they $g.student>> covered <<themselves $g.student>> with <<them $g.student>> arms with a yelp.
+    Now fully nude in front of the male instructor and guards, <<rep $g.student>> blinked in a daze before realization suddenly dawned on <<their $g.student>> face and <<they $g.student>> covered <<themselves $g.student>> with <<their $g.student>> arms with a yelp.
 </p>
 <p>
     The instructor threw a sleek metal collar to the ground in front of <<them $g.student>>. "Put it on."
@@ -165,7 +167,7 @@ setup.qdiff.harder43, /* difficulty */
     Trembling in fear and shame, <<rep $g.student>> made no move to do so. Suddenly, a harsh CRACK filled the room and <<rep $g.student>> felt an agonizing flare of pain on <<their $g.student>> back, letting out a startled cry. Seeing the guard pull the whip back for another strike, <<rep $g.student>> hastily knelt and picked up the collar. With trembling hands, <<rep $g.student>> collared <<themselves $g.student>>, the cold iron leaving a burning sensation against <<their $g.student>> neck.
 </p>
 <p>
-    The guards moved in, one guard roughly grabbing <<reps $g.student>> arms and pulling them behind <<their $g.student>>, shackling <<them $g.student>> wrists together. The other guard knelt and placed fetters on <<them $g.student>> ankles. Finally, the instructor moved forward, producing a ball gag that he roughly shoved into <<reps $g.student>> mouth before securing the strap behind <<them $g.student>> head.
+    The guards moved in, one guard roughly grabbing <<reps $g.student>> arms and pulling them behind <<them $g.student>>, shackling <<their $g.student>> wrists together. The other guard knelt and placed fetters on <<their $g.student>> ankles. Finally, the instructor moved forward, producing a ball gag that he roughly shoved into <<reps $g.student>> mouth before securing the strap behind <<their $g.student>> head.
 </p>
 <p>
     "This is a shock collar," the instructor said, tapping the metal collar. "Every time you disobey an order, or if you obey too slowly, you will be shocked." The instructor flicked a finger and with a gust of wind magic, an agonizing electric pain coursed through <<reps $g.student>> body, producing muffled cries of distress. "If the guard is feeling particularly cruel, you might be whipped as well. If you wish to avoid this pain, I would advise submitting early and letting yourself be molded into an obedient little slut."
@@ -186,7 +188,7 @@ setup.qdiff.harder43, /* difficulty */
     <<Rep $g.student>> didn't sleep well that night.
 </p>
 <p>
-    The next morning, <<rep $g.student>> was dragged from <<them $g.student>> cell by a guard, who took <<their $g.student>> gag out and immediately plunged his big, hairy dick into <<reps $g.student>> mouth. Ignoring <<them $g.student>> gagging and spluttering, the guard began to roughly facefuck <<them $g.student>>.
+    The next morning, <<rep $g.student>> was dragged from <<their $g.student>> cell by a guard, who took <<their $g.student>> gag out and immediately plunged his big, hairy dick into <<reps $g.student>> mouth. Ignoring <<them $g.student>> gagging and spluttering, the guard began to roughly facefuck <<them $g.student>>.
 </p>
 <p>
     "Cum is the only thing you get to eat besides the slave gruel," the guard said. "You better treasure this taste."
@@ -195,20 +197,20 @@ setup.qdiff.harder43, /* difficulty */
     <<Rep $g.student>> was subjected to this abuse day-after-day. Every morning started with a breakfast of cum and gruel, followed by intense training that involved rape and various commands that forced <<their $g.student>> to degrade and humiliate <<themselves $g.student>> throughout the afternoon, followed by a dinner of more cum and gruel. Slowly, <<rep $g.student>> found <<themselves $g.student>> obeying the degrading orders more and more quickly and eagerly, all to avoid the ever present pain from the whips and shocks.
 </p>
 <p>
-    <<Rep $g.student>> had long since lost any sense of time, everything blurring together into one giant haze of dick and cum, of pain and pleasure, of cries and guttural moans. However, one morning, when the guard dragged <<them $g.student>> out of the cell, he did not immediately start facefucking <<their $g.student>>.
+    <<Rep $g.student>> had long since lost any sense of time, everything blurring together into one giant haze of dick and cum, of pain and pleasure, of cries and guttural moans. However, one morning, when the guard dragged <<them $g.student>> out of the cell, he did not immediately start facefucking <<them $g.student>>.
 </p>
 <p>
     "Your time's up," he said. "Let's see if you pass."
 </p>
 <p>
-    As the guard pulled her by the leash up familiar flights of stairs, <<rep $g.student>> slowly regained <<them $g.student>> sense of self. That <<they $g.student>> was not just a slave, not just a toy with holes to be used. Finally, the guard led <<them $g.student>> into an office where an instructor was waiting.
+    As the guard pulled <<them $g.student>> by the leash up familiar flights of stairs, <<rep $g.student>> slowly regained <<their $g.student>> sense of self. That <<they $g.student>> was not just a slave, not just a toy with holes to be used. Finally, the guard led <<them $g.student>> into an office where an instructor was waiting.
 </p>
 <p>
     <<Reps $g.student>> restraints were removed. The instructor barked orders at <<rep $g.student>>.
     <<if $gOutcome == 'crit' || $gOutcome == 'success'>>
-        <<They $g.student>> found <<themselves $g.student>> carrying out each order quickly and without any hesitation, no matter how humiliating they got. After going through many degrading poses, the instructor finished by ordering <<them $g.student>> to get on <<them $g.student>> knees and spreading <<them $g.student>> pussy for him. <<Rep $g.student>> did just that, and the instructor wrapped things up by fucking her submissively presented pussy one last time. After cumming inside <<them $g.student>>, the instructor got up and spoke in a hypnotic voice, "You will forget all that you have experienced here. You will only remember that you became a good, obedient girl after graduating from here." As the instructor's voice sank into <<reps $g.student>> mind, <<they $g.student>> found <<their $g.student>> memories of this place slowly sinking into the depths of <<their $g.student>> mind.
+        <<They $g.student>> found <<themselves $g.student>> carrying out each order quickly and without any hesitation, no matter how humiliating they got. After going through many degrading poses, the instructor finished by ordering <<them $g.student>> to get on <<their $g.student>> knees and spreading <<their $g.student>> pussy for him. <<Rep $g.student>> did just that, and the instructor wrapped things up by fucking <<their $g.student>> submissively presented pussy one last time. After cumming inside <<them $g.student>>, the instructor got up and spoke in a hypnotic voice, "You will forget all that you have experienced here. You will only remember that you became a good, obedient girl after graduating from here." As the instructor's voice sank into <<reps $g.student>> mind, <<they $g.student>> found <<their $g.student>> memories of this place slowly sinking into the depths of <<their $g.student>> mind. By the time the instructor placed the certificate of graduation in <<their $g.student>> hands, the memories of abuse were all gone.
     <<else>>
-        However, <<rep $g.student>> found <<themselves $g.student>> hesitating, and with each errant pause the instructor's frown grew and grew. Eventually, the instructor shook his head with a sigh. "This one fails. Take her back down for even more intensive training." <<Rep $g.student>> felt her heart stop. Back down? For even more training? More intensive than before? Before <<they $g.student>> could properly comprehend this outcome, the guards had already grabbed <<them $g.student>> and forced the shackles back onto <<them $g.student>> body. Crying and sobbing, <<rep $g.student>> tried to beg them to let <<them $g.student>> go but <<their $g.student>> gag turned <<their $g.student>> pleas into nothing but muffled cries. As the guards dragged <<them $g.student>> back down into the deep, dark dungeon, <<rep $g.student>> didn't know if <<they $g.student>> would ever see the light of freedom ever again.
+        However, <<rep $g.student>> found <<themselves $g.student>> hesitating, and with each errant pause the instructor's frown grew and grew. Eventually, the instructor shook his head with a sigh. "This one fails. Take <<them $g.student>> back down for even more intensive training." <<Rep $g.student>> felt <<their $g.student>> heart stop. Back down? For even more training? More intensive than before? Before <<they $g.student>> could properly comprehend this outcome, the guards had already grabbed <<them $g.student>> and forced the shackles back onto <<their $g.student>> body. Crying and sobbing, <<rep $g.student>> tried to beg them to let <<them $g.student>> go but <<their $g.student>> gag turned <<their $g.student>> pleas into nothing but muffled cries. As the guards dragged <<them $g.student>> back down into the deep, dark dungeon, <<rep $g.student>> didn't know if <<they $g.student>> would ever see the light of freedom ever again.
     <</if>>
 
 </p>
